@@ -1,0 +1,27 @@
+header{
+    background-color: $verde;
+
+    img{
+        width: 23rem;
+        min-width: 70px;
+    }
+    li{
+        list-style: none;
+        text-decoration: none; 
+    } 
+        nav ul{
+        font-size: 2.4rem;   
+            li a:hover{
+            color: rgb(0, 129, 167);
+            } 
+            li a.active{
+                text-decoration: underline;
+            } 
+        }
+    
+}
+
+
+
+
+
