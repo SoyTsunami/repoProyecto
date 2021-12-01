@@ -18,3 +18,49 @@ h4{
     color: white;
     font-size: 2rem;
 } 
+
+form{
+    font-size: 2rem;
+}              
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; 
+    margin-top: 7px;
+} 
+
+.sectionImagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.sectionImagenes__cajas img{
+    width: 100%;
+    max-width: 612px;
+}
+
+.ventajas{
+    text-align: center;
+}
+
+.ventajas__text{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cajas{
+    border: double 4px;
+    color: rgba(6,36, 36, 255);     
+    justify-content: space-between; 
+}
+
+.cajas img{
+    width: 100%;
+    max-width: 612px;
+} 

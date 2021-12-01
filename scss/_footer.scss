@@ -1,0 +1,25 @@
+.zocalo {
+    background-color: rgba(6,36, 36, 255);
+    padding: 1rem;
+    display: flex;     
+    flex-direction: column;
+    justify-content:center;
+    align-items: center ; 
+} 
+
+.zocalo__Direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.zocalo__Direccion>p {
+    font-size: 1.7rem;
+    color: white;
+}
+
+i {
+    font-size: 4rem;
+    color: white;
+} 

@@ -7,3 +7,32 @@ $mainFont: 'EB Garamond', serif;
 .textBold{
     font-weight: 600;
 }
+
+.textCenter{
+    text-align: center;     
+}
+
+.textNormal{
+    font-family: 'EB Garamond', serif; 
+    font-size: 2.2rem;     
+}
+
+.textSmall{
+    font-family: 'EB Garamond', serif; 
+    font-size: 1.9rem; 
+}
+
+.wordSpacing{
+    word-spacing: 0.6rem;
+}
+
+.textGreen{
+    font-weight: 600;
+    color: rgba(6,36, 36, 255);
+} 
+
+.scale:hover{
+    transform: scale(1.05);
+    cursor: pointer; 
+    transition: transform 2s;    
+} 

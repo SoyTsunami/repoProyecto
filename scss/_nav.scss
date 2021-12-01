@@ -21,6 +21,30 @@ header{
     
 }
 
+.navbar-toggler{
+    color: azure;
+    border-color: azure;    
+    
+} 
+
+.encabezadoMenu {
+    margin-right: 0.5rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.encabezadoMenu>li {
+    background-color: rgb(224, 231, 224);
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border-radius: 8px;        
+}
+
+.encabezadoMenu>li>a {
+    font-size: 1.4rem;
+    color: rgba(6,36, 36, 255);
+}
 
 
 
