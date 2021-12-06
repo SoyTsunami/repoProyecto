@@ -154,6 +154,9 @@ main {
   width: 100%;
   max-width: 612px; }
 
+.carousel__Size {
+  max-width: 612px; }
+
 .ventajas {
   text-align: center; }
 
@@ -236,7 +239,6 @@ main {
 
 .zocalo {
   background-color: #062424;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
