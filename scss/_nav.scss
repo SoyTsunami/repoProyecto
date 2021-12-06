@@ -1,0 +1,69 @@
+header{
+    background-color: $verde;
+
+    img{
+        width: 23rem;
+        min-width: 70px;
+    }
+    li{
+        list-style: none;
+        text-decoration: none; 
+    } 
+        nav ul{
+        font-size: 2.4rem;   
+            li a:hover{
+            color: rgb(0, 129, 167);
+            } 
+            li a.active{
+                text-decoration: underline;
+            } 
+        }
+    
+}
+
+.navbar-toggler{
+    color: azure;
+    border-color: azure;    
+    
+} 
+
+#barraNav{
+    font-family: 'EB Garamond', serif; 
+    font-size: 2.4rem;      
+}
+       #barraNav li{
+           margin: 0.05em;                    
+           
+       }
+           #barraNav li a:hover{
+          color: rgb(0, 129, 167);
+              } 
+           #barraNav li a {
+          color: white; 
+          background-color: (6,36, 36, 255);
+          border-radius: 7px;                     
+             } 
+
+
+.encabezadoMenu {
+    margin-right: 0.5rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.encabezadoMenu>li {
+    background-color: rgb(224, 231, 224);
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border-radius: 8px;        
+}
+
+.encabezadoMenu>li>a {
+    font-size: 1.4rem;
+    color: rgba(6,36, 36, 255);
+}
+
+
+
+
