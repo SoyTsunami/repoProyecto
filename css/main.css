@@ -1,5 +1,14 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'EB Garamond', serif; }
+
+html {
+  font-size: 62.5%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +36,9 @@ footer {
 .marg-3 {
   margin: 2.1rem; }
 
+.margb {
+  margin-bottom: 0.7rem; }
+
 .textBold {
   font-weight: 600; }
 
@@ -49,7 +61,7 @@ footer {
   color: #062424; }
 
 .scale:hover {
-  transform: scale(1.05);
+  transform: scale(1.005);
   cursor: pointer;
   transition: transform 2s; }
 
@@ -71,6 +83,21 @@ header {
 .navbar-toggler {
   color: azure;
   border-color: azure; }
+
+#barraNav {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.4rem; }
+
+#barraNav li {
+  margin: 0.05em; }
+
+#barraNav li a:hover {
+  color: #0081a7; }
+
+#barraNav li a {
+  color: white;
+  background-color: 6, 36, 36, 255;
+  border-radius: 7px; }
 
 .encabezadoMenu {
   margin-right: 0.5rem;
@@ -99,7 +126,7 @@ h1 {
 
 h2, h3 {
   color: #062424;
-  font-size: 2.7rem; }
+  font-size: 3rem; }
 
 h4 {
   color: white;
@@ -142,6 +169,26 @@ main {
 .cajas img {
   width: 100%;
   max-width: 612px; }
+
+.contenedor {
+  display: grid;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center; }
+
+.template-areas {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "encabezado encabezado encabezado" "main main main" "pie pie pie"; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.main {
+  grid-area: main; }
+
+.pie {
+  grid-area: pie; }
 
 /* animaciones */
 .swing-in-top-fwd {
@@ -208,3 +255,64 @@ main {
 i {
   font-size: 4rem;
   color: white; }
+
+/* moviles pequeños */
+@media only screen and (min-device-width: 360px) and (max-device-width: 480px) {
+  .encabezadoMenu {
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .encabezadoMenu > li {
+    height: fit-content;
+    width: 100%; }
+  .encabezadoMenu > li > a {
+    font-size: 1.6rem; }
+  .tabla-precios {
+    font-size: 0.9rem; } }
+
+/* moviles grandes */
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+  .encabezado {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  header img {
+    width: 60%;
+    min-width: 70px; }
+  .zocalo {
+    flex-direction: column; }
+  .encabezadoMenu > li > a {
+    font-size: 1.7rem; } }
+
+/* ipads y tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1233px) {
+  .encabezado {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .zocalo {
+    flex-direction: row;
+    justify-content: space-between; }
+  .encabezadoMenu > li > a {
+    font-size: 2rem; }
+  .template-areas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado" "main main" "pie pie"; } }
+
+/* monitores */
+@media only screen and (min-device-width: 1233px) and (max-device-width: 1920px) {
+  .encabezado {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .zocalo {
+    flex-direction: row;
+    justify-content: space-between; }
+  .encabezadoMenu > li > a {
+    font-size: 2.5rem; }
+  .template-areas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "encabezado encabezado" "main main" "pie pie"; } }
