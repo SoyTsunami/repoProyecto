@@ -296,7 +296,7 @@ i {
     justify-content: space-between;
     align-items: center; }
   .zocalo {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between; }
   .encabezadoMenu > li > a {
     font-size: 2rem; }
